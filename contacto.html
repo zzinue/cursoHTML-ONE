@@ -25,37 +25,61 @@
     <main>
       <form>
         <label for="nombreapellido">Nombre y Apellido</label>
-        <input type="text" id="nombreapellido" />
+        <input type="text" id="nombreapellido" class="input-padron" />
         <label for="correoelectronico">Correo electronico</label>
-        <input type="text" id="correoelectronico" />
+        <input type="email" id="correoelectronico" class="input-padron" />
         <label for="telefono">Telefono</label>
-        <input type="text" id="telefono" />
+        <input type="tel" id="telefono" class="input-padron" />
         <label for="mensaje">Mensaje</label>
 
-        <textarea name="" id="" cols="70" rows="10" id="mensaje"></textarea>
+        <textarea
+          name=""
+          id=""
+          cols="70"
+          rows="10"
+          id="mensaje"
+          class="input-padron"
+        ></textarea>
 
         <div>
           <p>Como le gustaria que lo contactemos</p>
 
-          <label for="radio-email">Email</label>
-          <input type="radio" name="contacto" id="radio-email" value="email" />
-          <label for="radio-telefono">Telefono</label>
-          <input
-            type="radio"
-            name="contacto"
-            id="radio-telefono"
-            value="telefono"
-          />
-          <label for="radio-whatsapp">Whatsapp</label>
-          <input
-            type="radio"
-            name="contacto"
-            id="radio-whatsapp"
-            value="whatsapp"
-          />
-        </div>
+          <label for="radio-email">
+            <input
+              type="radio"
+              name="contacto"
+              id="radio-email"
+              value="email"
+            />
+            Email</label
+          >
+          <label for="radio-telefono"
+            ><input
+              type="radio"
+              name="contacto"
+              id="radio-telefono"
+              value="telefono"
+            />Telefono</label
+          >
 
-        <label for="">
+          <label for="radio-whatsapp"
+            ><input
+              type="radio"
+              name="contacto"
+              id="radio-whatsapp"
+              value="whatsapp"
+            />Whatsapp</label
+          >
+        </div>
+        <div>
+          <p>En cual horario prefiere ser atendido</p>
+          <select name="" id="">
+            <option value="">Mañana</option>
+            <option value="">Tarde</option>
+            <option value="">Noche</option>
+          </select>
+        </div>
+        <label for="" class="checkbox">
           <input type="checkbox" /> Le gustaria recibir novedades de la barberia
           Alura?
         </label>
