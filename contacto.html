@@ -12,7 +12,7 @@
   <body>
     <header>
       <div class="caja">
-        <h1><img src="./imagenes/logo.png" alt="" /></h1>
+        <h1><img src="./imagenes/logo.png" alt="imagende alt" /></h1>
         <nav>
           <ul>
             <li><a href="./index.html"> Home</a></li>
@@ -25,11 +25,23 @@
     <main>
       <form>
         <label for="nombreapellido">Nombre y Apellido</label>
-        <input type="text" id="nombreapellido" class="input-padron" />
+        <input type="text" id="nombreapellido" class="input-padron" required />
         <label for="correoelectronico">Correo electronico</label>
-        <input type="email" id="correoelectronico" class="input-padron" />
+        <input
+          type="email"
+          id="correoelectronico"
+          class="input-padron"
+          required
+          placeholder="like@gmail.com"
+        />
         <label for="telefono">Telefono</label>
-        <input type="tel" id="telefono" class="input-padron" />
+        <input
+          type="tel"
+          id="telefono"
+          class="input-padron"
+          required
+          placeholder="(55)xx xx xx xx"
+        />
         <label for="mensaje">Mensaje</label>
 
         <textarea
@@ -39,10 +51,11 @@
           rows="10"
           id="mensaje"
           class="input-padron"
+          required
         ></textarea>
 
-        <div>
-          <p>Como le gustaria que lo contactemos</p>
+        <fieldset>
+          <legend>Como le gustaria que lo contactemos</legend>
 
           <label for="radio-email">
             <input
@@ -68,26 +81,28 @@
               name="contacto"
               id="radio-whatsapp"
               value="whatsapp"
+              checked
             />Whatsapp</label
           >
-        </div>
-        <div>
-          <p>En cual horario prefiere ser atendido</p>
+        </fieldset>
+
+        <fieldset>
+          <legend>En cual horario prefiere ser atendido</legend>
           <select name="" id="">
             <option value="">Mañana</option>
             <option value="">Tarde</option>
             <option value="">Noche</option>
           </select>
-        </div>
+        </fieldset>
         <label for="" class="checkbox">
-          <input type="checkbox" /> Le gustaria recibir novedades de la barberia
-          Alura?
+          <input type="checkbox" checked /> Le gustaria recibir novedades de la
+          barberia Alura?
         </label>
-        <input type="submit" name="" id="" value="Enviar" />
+        <input type="submit" name="" id="" value="Enviar" class="enviar" />
       </form>
     </main>
     <footer>
-      <img src="/imagenes/logo-blanco.png" alt="" />
+      <img src="/imagenes/logo-blanco.png" alt="imagen alt del footer" />
       <p class="copyright">&copy Copyright Barberia Alura 2020</p>
     </footer>
   </body>
